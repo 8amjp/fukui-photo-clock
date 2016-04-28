@@ -1,0 +1,64 @@
+@charset "utf-8";
+
+body {
+  color: white;
+  background-color: black;
+}
+#dashboard {
+  position: fixed;
+}
+#backgrounds {
+  position: fixed;
+  overflow: scroll;
+  z-index: 1;
+}
+
+#clock,
+#caption {
+  position: fixed;
+  right: 0;
+  text-align: center;
+  text-shadow: 3px 3px 2px rgba(0, 0, 0, 0.5);
+  z-index: 2;
+}
+#clock {
+  top: 10%;
+}
+#time {
+  font-size: 4em;
+  font-weight: 300;
+}
+#date {
+  font-size: 1.5em;
+  font-weight: 300;
+}
+#caption {
+  bottom: 5%;
+  font-size: 1em;
+  line-height: 1.2em;
+}
+#backgrounds img {
+  position: absolute;
+}
+#credit {
+  color: white;
+}
+
+@media only screen and (orientation:portrait) {
+  #clock,
+  #caption {
+    width: 100%;
+  }
+  #backgrounds img {
+    height: 100%;
+  }
+}
+@media only screen and (orientation:landscape) {
+  #clock,
+  #caption {
+    width: 50%;
+  }
+  #backgrounds img {
+    width: 100%;
+  }
+}
